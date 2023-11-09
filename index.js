@@ -2,6 +2,8 @@ import express, { json } from 'express'
 import cors from 'cors'
 
 const app = express();
+
+app.use(express.static('dist'))
 app.use(cors())
 app.use(json())
 const PORT = process.env.PORT || 3002
@@ -43,7 +45,7 @@ app.post('/person/' , (req,res) => {
 
     persons = persons.concat(newPerson)
     
-    res.status(200)
+    res.status(200).send(persons)
 })
 
 

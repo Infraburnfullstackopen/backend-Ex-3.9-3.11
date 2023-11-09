@@ -1,0 +1,22 @@
+### post
+POST https://backend-ex-3-9-3-11.onrender.com/person/
+content-type: application/json
+
+{
+    "name": "Ivan",
+    "number": "1234122241"
+}
+
+### get
+# GET https://backend-ex-3-9-3-11.onrender.com/person/
+GET http://localhost:3002/
+
+### post
+POST http://localhost:3002/person/
+content-type: application/json
+
+{
+    "id": "1232131",
+    "name": "Alberto",
+    "number": "12341241"
+}
