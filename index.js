@@ -43,7 +43,7 @@ app.post('/person/' , (req,res) => {
 
     persons = persons.concat(newPerson)
     
-    res.status(200)
+    res.status(200).send(persons)
 })
 
 
