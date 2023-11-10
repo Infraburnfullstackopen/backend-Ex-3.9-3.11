@@ -7,6 +7,9 @@ content-type: application/json
     "number": "1234122241"
 }
 
+###delete
+DELETE http://localhost:3002/person/5
+
 ### get
 # GET https://backend-ex-3-9-3-11.onrender.com/person/
 GET http://localhost:3002/

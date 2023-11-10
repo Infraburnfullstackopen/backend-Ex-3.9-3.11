@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static('dist'))
 app.use(cors())
 app.use(json())
-const PORT = process.env.PORT || 3002
+const PORT = process.env.PORT || 3001
 
 let persons = [
         {
@@ -45,6 +45,12 @@ app.post('/person/' , (req,res) => {
 
     persons = persons.concat(newPerson)
     
+    res.status(200).send(persons)
+})
+
+app.delete('/person/:id', (req,res) => {
+    const params = parseInt(req.params.id)
+    persons = persons.filter(item => item.id !== params)
     res.status(200).send(persons)
 })
 
