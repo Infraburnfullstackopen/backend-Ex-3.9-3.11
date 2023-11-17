@@ -1,18 +1,29 @@
 ### post
-POST https://backend-ex-3-9-3-11.onrender.com/person/
+POST http://localhost:3001/person/
 content-type: application/json
 
 {
-    "name": "Ivan",
-    "number": "1234122241"
+    "name": "Eddie",
+    "number": "1555852522"
+}
+
+###Update
+PUT http://localhost:3001/person/6553e8ee41f1aaecd260e1bb
+content-type: application/json
+
+{
+    "name": "Eddie",
+    "number": "1122334455"
 }
 
 ###delete
-DELETE http://localhost:3002/person/5
+DELETE http://localhost:3001/person/6553dfc370e8f13472a1db8f
 
-### get
-# GET https://backend-ex-3-9-3-11.onrender.com/person/
-GET http://localhost:3002/
+### getbyid
+GET http://localhost:3001/person/6553e3d7e2a07f05eb0ce52f
+
+### get all
+GET http://localhost:3001/person/6553dfc370e8f13472a1db8f
 
 ### post
 POST http://localhost:3002/person/
